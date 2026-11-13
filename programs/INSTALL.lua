@@ -1,5 +1,5 @@
 local web = http.get('https://raw.githubusercontent.com/azb19111/cc-random-programs/refs/heads/main/programs/LOADER.lua')
-local file = fs.open('LOADER', 'w')
+local file = fs.open('LOADER', 'w+')
 file.write(web.readAll())
 file.close()
 web.close()
