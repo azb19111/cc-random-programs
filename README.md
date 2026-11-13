@@ -8,12 +8,12 @@ wget https://raw.githubusercontent.com/azb19111/cc-random-programs/refs/heads/ma
 
 To run it, use
 ```lua
-shell.run('LOADER')
+shell.run('INSTALL')
 ```
 in a lua file.
 If you want to run it once the system starts, use:
 ```lua
 edit startup.lua
-shell.run('LOADER')
+shell.run('INSTALL')
 ```
 Do not forget to save the file.
