@@ -1,3 +1,4 @@
+term.setCursorPos(0, 0)
 term.clear()
 print('LOADER started. Please wait ...')
 local web = http.get('https://raw.githubusercontent.com/azb19111/cc-random-programs/refs/heads/main/programs/PROGRAMS.lua')
@@ -10,7 +11,7 @@ print('Getting PROGRAMS ...')
 local programs = require('PROGRAMS')
 print('Got PROGRAMS. Searching for local programs ...')
 local localPrograms = {}
-for _, i in fs.list('/rom/') do
+for _, i in #fs.list('/rom/') do
     print('>', i)
     if i ~= 'startup' and i ~= 'INSTALL' and i ~= 'LOADER' and i ~= 'PROGRAMS' then
         table.insert(localPrograms, i)
